@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Internship Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Internship Board</h1>
+        <p>Find internships and start building your career.</p>
+    </header>
+
+    <main>
+
+        <section aria-labelledby="search-title">
+            <h2 id="search-title">Find an Internship</h2>
+
+            <form id="searchForm">
+                <label for="searchInput">Search internships</label>
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search by title or company"
+                >
+
+                <label for="domainFilter">Choose domain</label>
+                <select id="domainFilter">
+                    <option value="all">All Domains</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Data Analytics">Data Analytics</option>
+                    <option value="Python">Python</option>
+                    <option value="UI/UX">UI/UX</option>
+                </select>
+
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section aria-labelledby="results-title">
+            <h2 id="results-title">Available Internships</h2>
+
+            <div id="internshipList" aria-live="polite"></div>
+
+            <p id="emptyState" hidden>
+                No internships found. Try another search.
+            </p>
+
+            <p id="errorState" hidden>
+                Something went wrong. Please try again.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Internship Board</p>
+    </footer>
+
+    <script src="script(1).js"></script.js>
+
+</body>
+</html>
